@@ -18,7 +18,7 @@ head:
 
 **Java 异常类层次结构图概览**：
 
-![Java 异常类层次结构图](https://oss.javaguide.cn/github/javaguide/java/basis/types-of-exceptions-in-java.png)
+![Java 异常类层次结构图]( )
 
 ### Exception 和 Error 有什么区别？
 
@@ -33,7 +33,7 @@ head:
 
 比如下面这段 IO 操作的代码：
 
-![](https://oss.javaguide.cn/github/javaguide/java/basis/checked-exception.png)
+![]( )
 
 除了`RuntimeException`及其子类以外，其他的`Exception`类及其子类都属于受检查异常 。常见的受检查异常有：IO 相关的异常、`ClassNotFoundException`、`SQLException`...。
 
@@ -51,7 +51,7 @@ head:
 - `UnsupportedOperationException`(不支持的操作错误比如重复创建同一用户)
 - ……
 
-![](https://oss.javaguide.cn/github/javaguide/java/basis/unchecked-exception.png)
+![]( )
 
 ### Throwable 类常用方法有哪些？
 
@@ -89,7 +89,7 @@ Finally
 
 **注意：不要在 finally 语句块中使用 return!** 当 try 语句和 finally 语句中都有 return 语句时，try 语句块中的 return 语句会被忽略。这是因为 try 语句中的 return 返回值会先被暂存在一个本地变量中，当执行到 finally 语句中的 return 之后，这个本地变量的值就变为了 finally 语句中的 return 返回值。
 
-[jvm 官方文档](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html#jvms-4.10.2.5)中有明确提到：
+[jvm 官方文档]( )中有明确提到：
 
 > If the `try` clause executes a _return_, the compiled code does the following:
 >
@@ -152,7 +152,7 @@ Catch Exception -> RuntimeException
 1. 程序所在的线程死亡。
 2. 关闭 CPU。
 
-相关 issue：<https://github.com/Snailclimb/JavaGuide/issues/190>。
+相关 issue：< >。
 
 🧗🏻 进阶一下：从字节码角度分析`try catch finally`这个语法糖背后的实现原理。
 
@@ -339,7 +339,7 @@ printArray( stringArray  );
 
 不过，反射让我们在运行时有了分析操作类的能力的同时，也增加了安全问题，比如可以无视泛型参数的安全检查（泛型参数的安全检查发生在编译时）。另外，反射的性能也要稍差点，不过，对于框架来说实际是影响不大的。
 
-相关阅读：[Java Reflection: Why is it so slow?](https://stackoverflow.com/questions/1392351/java-reflection-why-is-it-so-slow) 。
+相关阅读：[Java Reflection: Why is it so slow?]( ) 。
 
 ### 反射的应用场景？
 
@@ -417,7 +417,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 很多框架都使用了 Java 的 SPI 机制，比如：Spring 框架、数据库加载驱动、日志接口、以及 Dubbo 的扩展实现等等。
 
-![](https://oss.javaguide.cn/github/javaguide/java/basis/spi/22e1830e0b0e4115a882751f6c417857tplv-k3u1fbpfcp-zoom-1.jpeg)
+![]( )
 
 ### SPI 和 API 有什么区别？
 
@@ -425,7 +425,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 说到 SPI 就不得不说一下 API 了，从广义上来说它们都属于接口，而且很容易混淆。下面先用一张图说明一下：
 
-![](https://oss.javaguide.cn/github/javaguide/java/basis/spi/1ebd1df862c34880bc26b9d494535b3dtplv-k3u1fbpfcp-watermark.png)
+![]( )
 
 一般模块之间都是通过接口进行通讯，那我们在服务调用方和服务实现方（也称服务提供者）之间引入一个“接口”。
 
@@ -470,7 +470,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 综上：**序列化的主要目的是通过网络传输对象或者说是将对象存储到文件系统、数据库、内存中。**
 
-![](https://oss.javaguide.cn/github/javaguide/a478c74d-2c48-40ae-9374-87aacf05188c.png)
+![]( )
 
 <p style="text-align:right;font-size:13px;color:gray">https://www.corejavaguru.com/java/serialization/interview-questions-1</p>
 
@@ -483,7 +483,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 3. 网络层
 4. 网络接口层
 
-![TCP/IP 四层模型](https://oss.javaguide.cn/github/javaguide/cs-basics/network/tcp-ip-4-model.png)
+![TCP/IP 四层模型]( )
 
 如上图所示，OSI 七层协议模型中，表示层做的事情主要就是对应用层的用户数据进行处理转换为二进制流。反过来的话，就是将二进制流转换成应用层的用户数据。这不就对应的是序列化和反序列化么？
 
