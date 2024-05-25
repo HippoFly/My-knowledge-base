@@ -37,14 +37,10 @@ function nav() {
           text: "Java基础",
           link: "/docs/backend/Java/basis/java-basic-questions-01",
         },
-        { text: "RabbitMQ", link: "/docs/back-end/rabbitmq" },
-        { text: "ElasticSearch", link: "/docs/back-end/elasticsearch" },
-        { text: "Mybatis-Plus", link: "/docs/back-end/mybatis-plus" },
-        { text: "SpringBoot项目模版", link: "/docs/back-end/springboot-template" },
+        { text: "Mybatis", link: "/docs/back-end/rabbitmq" }, 
       ],
     },
 
-    { text: '知识库', link: '/markdown-examples' }
   ];
 }
 function frontendBar() {
