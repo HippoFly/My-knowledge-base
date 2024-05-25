@@ -17,7 +17,7 @@ hero:
       text: 我的Github
       link: "https://github.com/HippoFly"
   image:
-      src: /resources/img/avatar.png
+      src: /img/avatar.png
       alt: avatar
 
 features:
