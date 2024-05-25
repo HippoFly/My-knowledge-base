@@ -8,8 +8,11 @@ hero:
   tagline: 用来记录个人所学的知识
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 前端
+      link: /docs\frontend\Vitepress\vitepress-tutorial.md
+    - theme: alt
+      text: 后端
+      link: /docs\backend\Java\basis\java-basic-questions-01.md
     - theme: alt
       text: 我的Github
       link: "https://github.com/HippoFly"
@@ -33,7 +36,7 @@ features:
 ---
 <style>
 :root {
-  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-color: grey;
  
 }
 </style>
