@@ -37,6 +37,7 @@ function nav() {
       activeMatch: "/backend/",
       items: [
         { text: "Java基础", link: "/docs/backend/Java/basis/java-basic-questions-01", },
+        { text: "Java集合", link: "/docs/backend/Java/collection/java-collection-questions-01", },
         { text: "Mybatis", link: "/docs/backend/MyBatis/mybatis" },
       ],
     },
