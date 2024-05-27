@@ -37,7 +37,7 @@ function nav() {
       activeMatch: "/backend/",
       items: [
         { text: "Java基础", link: "/docs/backend/Java/basis/java-basic-questions-01", },
-        { text: "Mybatis", link: "/docs/back-end/rabbitmq" },
+        { text: "Mybatis", link: "/docs/backend/MyBatis/mybatis" },
       ],
     },
 
@@ -75,6 +75,13 @@ function backendBar() {
       items: [
         { text: 'Java集合常见面试题总结(1)', link: 'Java/collection/java-collection-questions-01' },
         { text: 'Java集合常见面试题总结(2)', link: 'Java/collection/java-collection-questions-02' },
+      ]
+    },
+    {
+      text: 'Mybatis',
+      collapsed: false,
+      items: [
+        { text: 'Mybatis常见问题', link: 'MyBatis/mybatis' }, 
       ]
     },
 
