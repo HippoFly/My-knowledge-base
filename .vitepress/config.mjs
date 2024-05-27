@@ -9,7 +9,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
-
+    outlineTitle:"文章目录",
+    outline:[2,6],
     sidebar: {
       '/docs/frontend/': { base: '/docs/frontend/', items: frontendBar() },
       '/docs/backend/': { base: '/docs/backend/', items: backendBar() }
