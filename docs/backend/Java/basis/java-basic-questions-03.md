@@ -18,7 +18,7 @@ head:
 
 **Java 异常类层次结构图概览**：
 
-![Java 异常类层次结构图]( )
+![Java 异常类层次结构图](https://img2.imgtp.com/2024/05/27/wgHn1Uad.png)
 
 ### Exception 和 Error 有什么区别？
 
@@ -33,7 +33,7 @@ head:
 
 比如下面这段 IO 操作的代码：
 
-![]( )
+![](https://img2.imgtp.com/2024/05/27/MSsYaOTv.png)
 
 除了`RuntimeException`及其子类以外，其他的`Exception`类及其子类都属于受检查异常 。常见的受检查异常有：IO 相关的异常、`ClassNotFoundException`、`SQLException`...。
 
@@ -51,7 +51,7 @@ head:
 - `UnsupportedOperationException`(不支持的操作错误比如重复创建同一用户)
 - ……
 
-![]( )
+![](https://img2.imgtp.com/2024/05/27/S1Mmyd4q.png)
 
 ### Throwable 类常用方法有哪些？
 
@@ -417,7 +417,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 很多框架都使用了 Java 的 SPI 机制，比如：Spring 框架、数据库加载驱动、日志接口、以及 Dubbo 的扩展实现等等。
 
-![]( )
+![](https://img2.imgtp.com/2024/05/27/bQysiJ57.png)
 
 ### SPI 和 API 有什么区别？
 
@@ -425,7 +425,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 说到 SPI 就不得不说一下 API 了，从广义上来说它们都属于接口，而且很容易混淆。下面先用一张图说明一下：
 
-![]( )
+![](https://img2.imgtp.com/2024/05/27/cvpMqiG5.png)
 
 一般模块之间都是通过接口进行通讯，那我们在服务调用方和服务实现方（也称服务提供者）之间引入一个“接口”。
 
@@ -470,7 +470,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 综上：**序列化的主要目的是通过网络传输对象或者说是将对象存储到文件系统、数据库、内存中。**
 
-![]( )
+![](https://img2.imgtp.com/2024/05/27/rPdqNZVK.png)
 
 <p style="text-align:right;font-size:13px;color:gray">https://www.corejavaguru.com/java/serialization/interview-questions-1</p>
 
@@ -483,7 +483,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 3. 网络层
 4. 网络接口层
 
-![TCP/IP 四层模型]( )
+![TCP/IP 四层模型](https://img2.imgtp.com/2024/05/27/TUgBwOaw.png)
 
 如上图所示，OSI 七层协议模型中，表示层做的事情主要就是对应用层的用户数据进行处理转换为二进制流。反过来的话，就是将二进制流转换成应用层的用户数据。这不就对应的是序列化和反序列化么？
 
