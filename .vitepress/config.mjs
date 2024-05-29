@@ -13,7 +13,8 @@ export default defineConfig({
     outline:[1,6],
     sidebar: {
       '/docs/frontend/': { base: '/docs/frontend/', items: frontendBar() },
-      '/docs/backend/': { base: '/docs/backend/', items: backendBar() }
+      '/docs/backend/': { base: '/docs/backend/', items: backendBar() },
+      '/docs/database/': { base: '/docs/database/', items: databaseBar() }
     },
 
     socialLinks: [
@@ -39,6 +40,14 @@ function nav() {
         { text: "Java基础", link: "/docs/backend/Java/basis/java-basic-questions-01", },
         { text: "Java集合", link: "/docs/backend/Java/collection/java-collection-questions-01", },
         { text: "Mybatis", link: "/docs/backend/MyBatis/mybatis" },
+      ],
+    },
+    {
+      text: "数据库",
+      activeMatch: "/database/",
+      items: [
+        { text: "MySQL", link: "/docs/database/Java/basis/java-basic-questions-01", }, 
+        { text: "Redis", link: "/docs/database/Redis/redis-question", }, 
       ],
     },
 
@@ -85,6 +94,27 @@ function backendBar() {
         { text: 'Mybatis常见问题', link: 'MyBatis/mybatis' }, 
       ]
     },
+
+  ]
+}
+
+function databaseBar() {
+  return [
+    {
+      text: 'MySQL',
+      collapsed: false,
+      items: [
+        { text: 'MySQL常见面试题', link: 'Java/basis/java-basic-questions-01' }, 
+      ]
+    },
+    {
+      text: 'Redis',
+      collapsed: false,
+      items: [
+        { text: 'Redis常见问题', link: 'Redis/redis-question' },
+        { text: 'Redis数据结构', link: 'Redis/redis-data-structure' }, 
+      ]
+    }, 
 
   ]
 }
