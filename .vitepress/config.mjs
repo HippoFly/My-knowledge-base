@@ -113,6 +113,9 @@ function databaseBar() {
       items: [
         { text: 'Redis常见问题', link: 'Redis/redis-question' },
         { text: 'Redis数据结构', link: 'Redis/redis-data-structure' }, 
+        { text: '单独：Redis缓存不一致问题', link: 'Redis/redis-read-and-write-strategies' }, 
+        { text: '单独：Redis持久化', link: 'Redis/redis-persistent' }, 
+        { text: '场景：设计一个排行榜', link: 'Redis/redis-ranking-list' }, 
       ]
     }, 
 
