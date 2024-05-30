@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     outlineTitle:"文章目录",
-    outline:[1,6],
+    outline:[2,6],
     sidebar: {
       '/docs/frontend/': { base: '/docs/frontend/', items: frontendBar() },
       '/docs/backend/': { base: '/docs/backend/', items: backendBar() },
@@ -46,7 +46,7 @@ function nav() {
       text: "数据库",
       activeMatch: "/database/",
       items: [
-        { text: "MySQL", link: "/docs/database/Java/basis/java-basic-questions-01", }, 
+        { text: "MySQL", link: "/docs/database/MySQL/MySQL", }, 
         { text: "Redis", link: "/docs/database/Redis/redis-question", }, 
       ],
     },
@@ -104,7 +104,9 @@ function databaseBar() {
       text: 'MySQL',
       collapsed: false,
       items: [
-        { text: 'MySQL常见面试题', link: 'Java/basis/java-basic-questions-01' }, 
+        { text: 'MySQL常见面试题', link: 'MySQL/MySQL' }, 
+        { text: 'MySQL索引', link: 'MySQL/mysql-indexs' }, 
+        { text: '单独：MySQL索引失效', link: 'MySQL/mysql-index-failure' }, 
       ]
     },
     {
