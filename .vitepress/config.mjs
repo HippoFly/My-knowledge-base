@@ -14,7 +14,8 @@ export default defineConfig({
     sidebar: {
       '/docs/frontend/': { base: '/docs/frontend/', items: frontendBar() },
       '/docs/backend/': { base: '/docs/backend/', items: backendBar() },
-      '/docs/database/': { base: '/docs/database/', items: databaseBar() }
+      '/docs/database/': { base: '/docs/database/', items: databaseBar() },
+      '/docs/middleware/': { base: '/docs/middleware/', items: middlewareBar() }
     },
 
     socialLinks: [
@@ -48,6 +49,13 @@ function nav() {
       items: [
         { text: "MySQL", link: "/docs/database/MySQL/MySQL", }, 
         { text: "Redis", link: "/docs/database/Redis/redis-question", }, 
+      ],
+    },
+    {
+      text: "中间件",
+      activeMatch: "/middleware/",
+      items: [
+        { text: "消息队列MQ", link: "/docs/middleware/mq/rocketmq-questions", },  
       ],
     },
 
@@ -121,5 +129,17 @@ function databaseBar() {
       ]
     }, 
 
+  ]
+}
+function middlewareBar() {
+  return [
+    {
+      text: '消息队列MQ',
+      collapsed: false,
+      items: [
+        { text: 'RocketMQ', link: 'mq/rocketmq-questions' },
+       
+      ]
+    },
   ]
 }
