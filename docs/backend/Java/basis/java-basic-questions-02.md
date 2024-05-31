@@ -1,18 +1,4 @@
----
-title: Java基础常见面试题总结(中)
-category: Java
-tag:
-  - Java基础
-head:
-  - - meta
-    - name: keywords
-      content: 面向对象,构造方法,接口,抽象类,String,Object
-  - - meta
-    - name: description
-      content: 全网质量最高的Java基础常见知识点和面试题总结，希望对你有帮助！
----
 
-<!-- @include: @article-header.snippet.md -->
 
 ## 面向对象基础
 
@@ -779,9 +765,18 @@ public static String getStr() {
 }
 ```
 
-## 参考
+### 参考
 
 - 深入解析 String#intern：<https://tech.meituan.com/2014/03/06/in-depth-understanding-string-intern.html>
 - R 大（RednaxelaFX）关于常量折叠的回答：<https://www.zhihu.com/question/55976094/answer/147302764>
 
-<!-- @include: @article-footer.snippet.md -->
+## static
+
+###  static都有哪些用法?
+
+所有的人都知道static关键字这两个基本的用法:静态变量和静态方法.也就是被static所修饰的变量/
+方法都属于类的静态资源,类实例所共享.
+除了静态变量和静态方法之外,static也用于静态块,多用于初始化操作:
+此外static也多用于修饰内部类,此时称之为静态内部类.
+最后一种用法就是静态导包,即import static .import static是在JDK 1.5之后引入的新特性,可以用
+来指定导入某个类中的静态资源,并且不需要使用类名,可以直接使用资源名,比如:

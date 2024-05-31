@@ -1,18 +1,4 @@
----
-title: Java基础常见面试题总结(下)
-category: Java
-tag:
-  - Java基础
-head:
-  - - meta
-    - name: keywords
-      content: Java异常,泛型,反射,IO,注解
-  - - meta
-    - name: description
-      content: 全网质量最高的Java基础常见知识点和面试题总结，希望对你有帮助！
----
 
-<!-- @include: @article-header.snippet.md -->
 
 ## 异常
 
@@ -489,7 +475,7 @@ SPI 将服务接口和具体的服务实现分离开来，将服务调用方和�
 
 因为，OSI 七层协议模型中的应用层、表示层和会话层对应的都是 TCP/IP 四层模型中的应用层，所以序列化协议属于 TCP/IP 协议应用层的一部分。
 
-### 如果有些字段不想进行序列化怎么办？
+### transient 如果有些字段不想进行序列化怎么办？
 
 对于不想进行序列化的变量，使用 `transient` 关键字修饰。
 
