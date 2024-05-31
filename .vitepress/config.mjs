@@ -40,6 +40,7 @@ function nav() {
       items: [
         { text: "Java基础", link: "/docs/backend/Java/basis/java-basic-questions-01", },
         { text: "Java集合", link: "/docs/backend/Java/collection/java-collection-questions-01", },
+        { text: "JVM", link: "/docs/backend/Java/jvm/jvm", },
         { text: "Mybatis", link: "/docs/backend/MyBatis/mybatis" },
       ],
     },
@@ -93,6 +94,13 @@ function backendBar() {
       items: [
         { text: 'Java集合常见面试题总结(1)', link: 'Java/collection/java-collection-questions-01' },
         { text: 'Java集合常见面试题总结(2)', link: 'Java/collection/java-collection-questions-02' },
+      ]
+    },
+    {
+      text: 'JVM',
+      collapsed: false,
+      items: [
+        { text: 'JVM知识点', link: 'Java/jvm/jvm' }, 
       ]
     },
     {
