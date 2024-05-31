@@ -101,6 +101,8 @@ function backendBar() {
       collapsed: false,
       items: [
         { text: 'JVM知识点', link: 'Java/jvm/jvm' }, 
+        { text: 'JVM类加载', link: 'Java/jvm/classloader' }, 
+        { text: 'JVM调优', link: 'Java/jvm/jvmturing' }, 
       ]
     },
     {
