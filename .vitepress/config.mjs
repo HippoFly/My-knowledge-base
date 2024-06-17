@@ -53,6 +53,13 @@ function nav() {
       ],
     },
     {
+      text: "计算机基础",
+      activeMatch: "/cs-basic/",
+      items: [
+        { text: "计算机网络", link: "/docs/cs-basic/network", },  
+      ],
+    },
+    {
       text: "中间件",
       activeMatch: "/middleware/",
       items: [
