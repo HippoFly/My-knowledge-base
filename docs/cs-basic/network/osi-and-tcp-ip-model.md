@@ -9,15 +9,15 @@ tag:
 
 **OSI 七层模型** 是国际标准化组织提出一个网络分层模型，其大体结构以及每一层提供的功能如下图所示：
 
-![OSI 七层模型](https://oss.javaguide.cn/github/javaguide/cs-basics/network/osi-7-model.png)
-
-每一层都专注做一件事情，并且每一层都需要使用下一层提供的功能比如传输层需要使用网络层提供的路由和寻址功能，这样传输层才知道把数据传输到哪里去。
+![image-20241005001929510](osi-and-tcp-ip-model/image-20241005001929510.png)每一层都专注做一件事情，并且每一层都需要使用下一层提供的功能比如传输层需要使用网络层提供的路由和寻址功能，这样传输层才知道把数据传输到哪里去。
 
 **OSI 的七层体系结构概念清楚，理论也很完整，但是它比较复杂而且不实用，而且有些功能在多个层中重复出现。**
 
 上面这种图可能比较抽象，再来一个比较生动的图片。下面这个图片是我在国外的一个网站上看到的，非常赞！
 
-![osi七层模型2](https://oss.javaguide.cn/github/javaguide/osi七层模型2.png)
+
+
+![image-20241005001946484](osi-and-tcp-ip-model/image-20241005001946484.png)
 
 **既然 OSI 七层模型这么厉害，为什么干不过 TCP/IP 四 层模型呢？**
 
@@ -32,7 +32,7 @@ OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础�
 
 最后再分享一个关于 OSI 七层模型非常不错的总结图片！
 
-![](https://oss.javaguide.cn/github/javaguide/cs-basics/network/osi-model-detail.png)
+![image-20241005002007066](osi-and-tcp-ip-model/image-20241005002007066.png)
 
 ## TCP/IP 四层模型
 
@@ -45,19 +45,19 @@ OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础�
 
 需要注意的是，我们并不能将 TCP/IP 四层模型 和 OSI 七层模型完全精确地匹配起来，不过可以简单将两者对应起来，如下图所示：
 
-![TCP/IP 四层模型](https://oss.javaguide.cn/github/javaguide/cs-basics/network/tcp-ip-4-model.png)
+![image-20240927093448298](osi-and-tcp-ip-model.assets/image-20240927093448298.png)
 
 ### 应用层（Application layer）
 
 **应用层位于传输层之上，主要提供两个终端设备上的应用程序之间信息交换的服务，它定义了信息交换的格式，消息会交给下一层传输层来传输。** 我们把应用层交互的数据单元称为报文。
 
-![](https://oss.javaguide.cn/github/javaguide/cs-basics/network/network-five-layer-sample-diagram.png)
+![](osi-and-tcp-ip-model/network-five-layer-sample-diagram.png)
 
 应用层协议定义了网络通信规则，对于不同的网络应用需要不同的应用层协议。在互联网中应用层协议很多，如支持 Web 应用的 HTTP 协议，支持电子邮件的 SMTP 协议等等。
 
 **应用层常见协议**：
 
-![应用层常见协议](https://oss.javaguide.cn/github/javaguide/cs-basics/network/application-layer-protocol.png)
+![应用层常见协议](osi-and-tcp-ip-model/application-layer-protocol.png)
 
 - **HTTP（Hypertext Transfer Protocol，超文本传输协议）**：基于 TCP 协议，是一种用于传输超文本和多媒体内容的协议，主要是为 Web 浏览器与 Web 服务器之间的通信而设计的。当我们使用浏览器浏览网页的时候，我们网页就是通过 HTTP 请求进行加载的。
 - **SMTP（Simple Mail Transfer Protocol，简单邮件发送协议）**：基于 TCP 协议，是一种用于发送电子邮件的协议。注意 ⚠️：SMTP 协议只负责邮件的发送，而不是接收。要从邮件服务器接收邮件，需要使用 POP3 或 IMAP 协议。
@@ -76,7 +76,7 @@ OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础�
 
 **传输层常见协议**：
 
-![传输层常见协议](https://oss.javaguide.cn/github/javaguide/cs-basics/network/transport-layer-protocol.png)
+![传输层常见协议](osi-and-tcp-ip-model/transport-layer-protocol.png)
 
 - **TCP（Transmission Control Protocol，传输控制协议 ）**：提供 **面向连接** 的，**可靠** 的数据传输服务。
 - **UDP（User Datagram Protocol，用户数据协议）**：提供 **无连接** 的，**尽最大努力** 的数据传输服务（不保证数据传输的可靠性），简单高效。
@@ -95,7 +95,7 @@ OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础�
 
 **网络层常见协议**：
 
-![网络层常见协议](images/network-model/nerwork-layer-protocol.png)
+![网络层常见协议](osi-and-tcp-ip-model/image-20241005005612156.png)
 
 - **IP（Internet Protocol，网际协议）**：TCP/IP 协议中最重要的协议之一，主要作用是定义数据包的格式、对数据包进行路由和寻址，以便它们可以跨网络传播并到达正确的目的地。目前 IP 协议主要分为两种，一种是过去的 IPv4，另一种是较新的 IPv6，目前这两种协议都在使用，但后者已经被提议来取代前者。
 - **ARP（Address Resolution Protocol，地址解析协议）**：ARP 协议解决的是网络层地址和链路层地址之间的转换问题。因为一个 IP 数据报在物理上传输的过程中，总是需要知道下一跳（物理上的下一个目的地）该去往何处，但 IP 地址属于逻辑地址，而 MAC 地址才是物理地址，ARP 协议解决了 IP 地址转 MAC 地址的一些问题。
@@ -114,13 +114,13 @@ OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础�
 
 网络接口层重要功能和协议如下图所示：
 
-![网络接口层重要功能和协议](https://oss.javaguide.cn/github/javaguide/cs-basics/network/network-interface-layer-protocol.png)
+![网络接口层重要功能和协议](osi-and-tcp-ip-model/network-interface-layer-protocol.png)
 
 ### 总结
 
 简单总结一下每一层包含的协议和核心技术:
 
-![TCP/IP 各层协议概览](https://oss.javaguide.cn/github/javaguide/cs-basics/network/network-protocol-overview.png)
+![TCP/IP 各层协议概览](osi-and-tcp-ip-model/network-protocol-overview.png)
 
 **应用层协议** :
 
