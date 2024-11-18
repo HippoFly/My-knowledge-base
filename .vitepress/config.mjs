@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "个人知识库",
-  base: '/My-knowledge-base/',
+  base: '/',
   ignoreDeadLinks: true,
   description: "A VitePress Site",
   themeConfig: {
@@ -101,6 +101,7 @@ function backendBar() {
       items: [
         { text: 'Java集合常见面试题总结(1)', link: 'Java/collection/java-collection-questions-01' },
         { text: 'Java集合常见面试题总结(2)', link: 'Java/collection/java-collection-questions-02' },
+        { text: '01. Map', link: 'Java/collection/01-map' },
       ]
     },
     {
